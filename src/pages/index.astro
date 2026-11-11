@@ -1,0 +1,256 @@
+---
+import "../styles/global.css";
+const titulo = "Schaefer Digital | Sites, Google Meu Negócio e sistemas sob medida";
+const descricao = "Sites, perfil no Google e sistemas sob medida para pequenas e médias empresas. Atendimento direto com Evandro Schaefer, em Santa Cruz do Sul/RS.";
+---
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>{titulo}</title>
+    <meta name="description" content={descricao} />
+    <meta name="theme-color" content="#111111" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:title" content={titulo} />
+    <meta property="og:description" content={descricao} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..800&family=JetBrains+Mono:wght@400;500&display=swap" />
+  </head>
+  <body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="logo-sd" viewBox="0 0 1034.8 260">
+    <rect width="260" height="260" style="fill:var(--l-quadro)"/>
+    <rect x="180" y="180" width="80" height="80" fill="#F5C518"/>
+    <path style="fill:var(--l-s)" d="M122.78 173.25Q110.18 173.25 99.23 171.75Q88.28 170.25 80.03 166.5Q71.78 162.75 67.12 156Q62.48 149.25 62.48 138.9Q62.48 138.6 62.48 138.15Q62.48 137.7 62.63 137.25H92.62Q92.48 137.85 92.4 138.45Q92.33 139.05 92.33 139.8Q92.33 144.45 95.85 147.07Q99.38 149.7 105.68 150.75Q111.98 151.8 120.53 151.8Q123.980 151.8 127.65 151.57Q131.32 151.35 134.78 150.82Q138.23 150.3 141 149.25Q143.78 148.2 145.35 146.62Q146.93 145.05 146.93 142.65Q146.93 139.5 143.55 137.62Q140.18 135.75 134.25 134.62Q128.32 133.5 121.05 132.6Q113.78 131.7 105.98 130.42Q98.18 129.15 90.83 126.97Q83.48 124.8 77.62 121.2Q71.78 117.6 68.33 111.9Q64.88 106.2 64.88 98.1Q64.88 89.85 69 83.92Q73.12 78 80.62 74.1Q88.12 70.2 98.33 68.32Q108.53 66.45 120.53 66.45Q132.82 66.45 142.8 68.4Q152.78 70.35 159.9 74.17Q167.03 78 170.85 83.77Q174.68 89.55 174.68 97.35V99.45H145.12V98.25Q145.12 95.1 142.43 92.62Q139.73 90.15 134.55 88.72Q129.38 87.3 122.03 87.3Q113.18 87.3 107.48 88.42Q101.78 89.55 99.08 91.42Q96.38 93.3 96.38 95.7Q96.38 98.7 99.83 100.42Q103.28 102.15 109.12 103.2Q114.98 104.25 122.25 105.15Q129.53 106.05 137.4 107.25Q145.28 108.45 152.55 110.55Q159.82 112.65 165.68 116.17Q171.53 119.7 174.98 125.17Q178.43 130.65 178.43 138.6Q178.43 151.05 171.23 158.7Q164.03 166.35 151.5 169.8Q138.98 173.25 122.78 173.25Z"/>
+    <path style="fill:var(--l-texto)" d="M375.2 132.42Q366.8 132.42 359.5 131.42Q352.2 130.42 346.7 127.92Q341.2 125.42 338.1 120.92Q335 116.42 335 109.52Q335 109.32 335 109.02Q335 108.72 335.1 108.42H355.1Q355 108.82 354.95 109.22Q354.9 109.62 354.9 110.12Q354.9 113.22 357.25 114.97Q359.6 116.72 363.8 117.42Q368 118.12 373.7 118.12Q376 118.12 378.45 117.97Q380.9 117.82 383.2 117.47Q385.5 117.12 387.35 116.42Q389.2 115.72 390.25 114.67Q391.3 113.62 391.3 112.02Q391.3 109.92 389.05 108.67Q386.8 107.42 382.85 106.67Q378.9 105.92 374.05 105.32Q369.2 104.72 364 103.87Q358.8 103.020 353.9 101.57Q349 100.12 345.1 97.72Q341.2 95.32 338.9 91.52Q336.6 87.72 336.6 82.32Q336.6 76.82 339.35 72.87Q342.1 68.92 347.1 66.32Q352.1 63.72 358.9 62.47Q365.7 61.22 373.7 61.22Q381.9 61.22 388.55 62.52Q395.2 63.82 399.95 66.37Q404.7 68.92 407.25 72.77Q409.8 76.62 409.8 81.82V83.22H390.1V82.42Q390.1 80.32 388.3 78.67Q386.5 77.02 383.05 76.07Q379.6 75.12 374.7 75.12Q368.8 75.12 365 75.87Q361.2 76.62 359.4 77.87Q357.6 79.12 357.6 80.72Q357.6 82.72 359.9 83.87Q362.2 85.02 366.1 85.72Q370 86.42 374.85 87.02Q379.7 87.62 384.95 88.42Q390.2 89.22 395.05 90.62Q399.9 92.02 403.8 94.37Q407.7 96.72 410 100.37Q412.3 104.02 412.3 109.32Q412.3 117.62 407.5 122.72Q402.7 127.82 394.35 130.12Q386 132.42 375.2 132.42Z M463.4 132.42Q449 132.42 439.4 128.37Q429.8 124.32 425 116.42Q420.2 108.52 420.2 96.82Q420.2 79.72 431.25 70.47Q442.3 61.22 463.5 61.22Q475.3 61.22 484.3 64.77Q493.3 68.32 498.35 74.77Q503.4 81.22 503.4 90.02H483.6Q483.6 85.72 481.05 82.67Q478.5 79.62 473.9 77.97Q469.3 76.32 463.2 76.32Q456 76.32 451.1 78.77Q446.2 81.22 443.65 85.52Q441.1 89.82 441.1 95.52V98.02Q441.1 103.72 443.65 108.07Q446.2 112.42 451.05 114.87Q455.9 117.32 462.9 117.32Q469.5 117.32 474.25 115.77Q479 114.22 481.55 111.22Q484.1 108.22 484.1 104.02H503.5Q503.5 112.52 498.6 118.92Q493.7 125.32 484.75 128.87Q475.8 132.42 463.4 132.42Z M515.4 131.22V62.42H535.7V88.02H577V62.42H597.3V131.22H577V104.42H535.7V131.22Z M605.3 131.22 639.1 62.42H661.8L695.6 131.22H673.5L668.3 120.22H631.5L626.3 131.22ZM638.3 105.32H661.5L655.3 91.32Q654.9 90.42 654.2 88.67Q653.5 86.92 652.7 84.97Q651.9 83.02 651.3 81.37Q650.7 79.72 650.3 78.92H649.6Q648.9 80.72 647.9 83.12Q646.9 85.52 646.05 87.72Q645.2 89.92 644.5 91.32Z M703.6 131.22V62.42H775.2V77.52H724V89.12H768.8V103.72H724V116.12H776V131.22Z M787.9 131.22V62.42H855.5V77.52H808.2V91.42H850.3V106.52H808.2V131.22Z M865.8 131.22V62.42H937.4V77.52H886.2V89.12H931V103.72H886.2V116.12H938.2V131.22Z M950.1 131.22V62.42H1007.3Q1014.8 62.42 1019.7 65.52Q1024.6 68.62 1027.1 73.67Q1029.6 78.72 1029.6 84.72Q1029.6 91.22 1026.5 96.57Q1023.4 101.92 1017.2 105.02L1031.2 131.22H1008.2L996.8 108.32H970.4V131.22ZM970.4 93.32H1000.6Q1004.3 93.32 1006.5 91.12Q1008.7 88.92 1008.7 85.22Q1008.7 82.82 1007.7 81.07Q1006.7 79.32 1004.9 78.42Q1003.1 77.52 1000.6 77.52H970.4Z"/>
+    <path style="fill:var(--l-texto)" d="M336.18 197.38V156.16H357.6Q365.16 156.16 370.53 158.53Q375.9 160.9 378.81 165.49Q381.72 170.08 381.72 176.8Q381.72 183.52 378.81 188.08Q375.9 192.64 370.53 195.01Q365.16 197.38 357.6 197.38ZM343.92 190.84H357.24Q360.78 190.84 363.78 190.06Q366.78 189.28 369 187.63Q371.22 185.98 372.48 183.43Q373.74 180.88 373.74 177.46V176.08Q373.74 172.66 372.48 170.14Q371.22 167.62 369 165.97Q366.78 164.32 363.78 163.51Q360.78 162.7 357.24 162.7H343.92Z M405.48 197.38V156.16H413.22V197.38Z M461.82 198.1Q449.34 198.1 443.13 192.82Q436.92 187.54 436.92 176.8Q436.92 169.78 440.07 165.01Q443.22 160.24 449.16 157.84Q455.1 155.44 463.38 155.44Q468.9 155.44 473.37 156.37Q477.84 157.3 481.05 159.16Q484.26 161.02 485.97 163.87Q487.68 166.72 487.68 170.62H480.12Q480.12 168.1 478.77 166.39Q477.42 164.68 475.08 163.72Q472.74 162.76 469.83 162.37Q466.92 161.98 463.68 161.98Q459.72 161.98 456.3 162.76Q452.88 163.54 450.3 165.22Q447.72 166.9 446.28 169.57Q444.84 172.24 444.84 176.02V177.46Q444.84 182.56 447.06 185.65Q449.28 188.74 453.24 190.15Q457.2 191.56 462.48 191.56Q468.78 191.56 472.65 190.36Q476.52 189.16 478.32 186.91Q480.12 184.66 480.12 181.66V181H462.42V174.76H487.74V197.38H482.76L481.92 191.62Q479.7 193.96 476.58 195.4Q473.46 196.84 469.68 197.47Q465.9 198.1 461.82 198.1Z M512.76 197.38V156.16H520.5V197.38Z M559.92 197.38V163H541.44V156.16H586.14V163H567.66V197.38Z M594.6 197.38 615.42 156.16H624.24L645.06 197.38H636.54L632.1 188.5H607.02L602.58 197.38ZM610.14 182.14H628.98L623.52 170.92Q623.22 170.26 622.65 169.03Q622.08 167.8 621.51 166.48Q620.94 165.16 620.46 164.14Q619.98 163.12 619.8 162.88H619.32Q618.78 164.08 618.06 165.67Q617.34 167.26 616.68 168.7Q616.02 170.14 615.6 170.98Z M666.12 197.38V156.16H673.86V190.54H699.84V197.38Z"/>
+  </symbol>
+  <symbol id="ico-whats" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M20.5 11.6a8.4 8.4 0 0 1-12.3 7.4L3.5 20.5 5 16a8.4 8.4 0 1 1 15.5-4.4Z"/></symbol>
+</svg>
+
+<header class="topo">
+  <div class="faixa-int">
+    <a href="#inicio" aria-label="Schaefer Digital, voltar ao início"><svg class="logo" viewBox="0 0 1034.8 260" aria-hidden="true"><use href="#logo-sd"/></svg></a>
+    <nav aria-label="Seções">
+      <ul><li><a href="#servicos">Serviços</a></li><li><a href="#trabalhos">Trabalhos</a></li><li><a href="#processo">Como eu trabalho</a></li><li><a href="#contato">Contato</a></li></ul>
+    </nav>
+    <a class="botao botao-cheio botao-pequeno" data-magnetico href="https://wa.me/5551991556819?text=Ol%C3%A1%2C%20Evandro!%20Vim%20pelo%20site%20e%20quero%20conversar%20sobre%20um%20projeto." target="_blank" rel="noopener noreferrer"><svg aria-hidden="true"><use href="#ico-whats"/></svg>Conversar</a>
+  </div>
+</header>
+
+<main>
+  <section class="abertura" id="inicio">
+    <canvas id="grade" aria-hidden="true"></canvas>
+    <div class="faixa-int">
+      <div class="abertura-texto">
+        <p class="coord mono"><span>Sites, Google Meu Negócio e sistemas</span></p>
+        <h1 class="titulo" data-decodificar>Sites e sistemas que trabalham pelo seu negócio.</h1>
+        <p class="sub">Crio sites, deixo o seu perfil no Google completo e desenvolvo sistemas sob medida para pequenas e médias empresas. Você fala direto comigo, do primeiro contato à entrega.</p>
+        <div class="acoes">
+          <a class="botao botao-cheio" data-magnetico href="https://wa.me/5551991556819?text=Ol%C3%A1%2C%20Evandro!%20Vim%20pelo%20site%20e%20quero%20conversar%20sobre%20um%20projeto." target="_blank" rel="noopener noreferrer"><svg aria-hidden="true"><use href="#ico-whats"/></svg>Conversar pelo WhatsApp</a>
+          <a class="botao botao-vazado" data-magnetico href="#servicos">Ver serviços</a>
+        </div>
+        <p class="status mono">Agenda aberta para novos projetos</p>
+      </div>
+      <div class="vitrine-abertura">
+        <div class="janela">
+          <div class="janela-barra"><i></i><i></i><i></i><span class="vit-dominio">rafaelaschaefer.com.br</span></div>
+          <div class="vit-tela">
+            <img class="vit-img ativa" src="trabalhos/rafaela-site.jpg" width="960" height="2069" alt="Site da advogada Rafaela Schaefer" data-dominio="rafaelaschaefer.com.br" data-cliente="Rafaela Schaefer" data-seg="advocacia em Santa Cruz do Sul">
+            <img class="vit-img" src="trabalhos/juliana-site.jpg" width="960" height="1668" alt="Site da advogada Juliana Melo" data-dominio="julianameloadvocacia.com" data-cliente="Juliana Melo" data-seg="advocacia no Rio de Janeiro">
+            <img class="vit-img" src="trabalhos/radiomed-site.jpg" width="960" height="3188" alt="Site da RadioMed" data-dominio="radiomed.com.br" data-cliente="RadioMed" data-seg="tomografia em Vera Cruz">
+          </div>
+        </div>
+        <p class="vit-legenda" aria-live="polite"><span><b class="vit-cliente">Rafaela Schaefer</b>, <span class="vit-seg">advocacia em Santa Cruz do Sul</span></span><span class="vit-pontos" aria-hidden="true"><i class="ativo"></i><i></i><i></i></span></p>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="trabalhos" id="trabalhos" aria-labelledby="t-trabalhos">
+    <div class="faixa-int">
+      <h2 class="clientes-titulo" id="t-trabalhos">Clientes com site no ar</h2>
+      <p class="fita-dica">Passe o mouse sobre um nome para ver o site. No celular, toque no nome.</p>
+    </div>
+    <div class="fita" aria-label="Clientes">
+      <div class="fita-trilho">
+        <div class="fita-grupo">
+            <div class="cliente" tabindex="0">
+              <span class="nome">Rafaela Schaefer</span>
+              <span class="seg">Advocacia · Santa Cruz do Sul/RS</span>
+              <div class="cartao">
+                <img src="trabalhos/rafaela-capa.jpg" width="560" height="350" alt="Página inicial do site rafaelaschaefer.com.br" loading="lazy" decoding="async">
+                <div class="cartao-corpo"><span class="mono">rafaelaschaefer.com.br</span><a class="botao botao-cheio botao-pequeno" href="https://rafaelaschaefer.com.br/" target="_blank" rel="noopener noreferrer">Abrir o site ↗</a></div>
+              </div>
+            </div>
+            <div class="cliente" tabindex="0">
+              <span class="nome">Juliana Melo</span>
+              <span class="seg">Advocacia · Rio de Janeiro/RJ</span>
+              <div class="cartao">
+                <img src="trabalhos/juliana-capa.jpg" width="560" height="350" alt="Página inicial do site julianameloadvocacia.com" loading="lazy" decoding="async">
+                <div class="cartao-corpo"><span class="mono">julianameloadvocacia.com</span><a class="botao botao-cheio botao-pequeno" href="https://julianameloadvocacia.com/" target="_blank" rel="noopener noreferrer">Abrir o site ↗</a></div>
+              </div>
+            </div>
+            <div class="cliente" tabindex="0">
+              <span class="nome">RadioMed</span>
+              <span class="seg">Tomografia · Vera Cruz/RS</span>
+              <div class="cartao">
+                <img src="trabalhos/radiomed-capa.jpg" width="560" height="350" alt="Página inicial do site radiomed.com.br" loading="lazy" decoding="async">
+                <div class="cartao-corpo"><span class="mono">radiomed.com.br</span><a class="botao botao-cheio botao-pequeno" href="https://radiomed.com.br/" target="_blank" rel="noopener noreferrer">Abrir o site ↗</a></div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="servicos" id="servicos" aria-labelledby="t-servicos">
+    <div class="faixa-int">
+      <header class="cab-secao"><div>
+        <h2 class="titulo-2" id="t-servicos">Três frentes para o seu negócio ser encontrado e funcionar melhor.</h2>
+      </div></header>
+
+      <article class="servico">
+        <div class="servico-texto">
+          <h3>Criação de sites</h3>
+          <p>Um site com a cara do seu negócio, rápido no celular e pensado para quem chega pelo Google virar contato.</p>
+          <ul class="itens"><li>Layout exclusivo, sem modelo pronto</li><li>Carrega rápido e funciona bem no celular</li><li>Estrutura pensada para o Google</li><li>Botão direto para o seu WhatsApp</li></ul>
+        </div>
+        <div class="modulo" data-demo="site">
+          <div class="modulo-barra"><span class="mono">demo · site</span><button class="repetir" type="button" id="rep-site">↻ Repetir</button></div>
+          <div class="modulo-corpo">
+            <div class="navegador">
+              <div class="nav-barra"><i></i><i></i><i></i><span class="url"><span class="url-txt">seunegocio.com.br</span><span class="cursor-txt"></span></span></div>
+              <div class="tela">
+                <div class="ds-nav"><b></b><span></span><span></span><span></span></div>
+                <div class="ds-hero"><div class="ds-l l1"></div><div class="ds-l l2"></div><div class="ds-l l3"></div><div class="ds-btn">Fale conosco</div></div>
+                <div class="ds-cards"><div></div><div></div><div></div></div>
+                <svg class="ponteiro" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 2l15 11-7 1-3 7z" fill="#111" stroke="#fff" stroke-width="1.5" stroke-linejoin="round"/></svg>
+                <div class="ds-aviso">Nova mensagem pelo WhatsApp</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="servico">
+        <div class="servico-texto">
+          <h3>Google Meu Negócio</h3>
+          <p>Quando alguém procura o que você faz na sua cidade, o seu negócio precisa aparecer completo e confiável.</p>
+          <ul class="itens"><li>Criação ou revisão do perfil</li><li>Categorias, serviços, horários e fotos corretos</li><li>Descrição escrita para quem procura</li><li>Orientação para pedir e responder avaliações</li></ul>
+        </div>
+        <div class="modulo" data-demo="gmn">
+          <div class="modulo-barra"><span class="mono">demo · google</span><button class="repetir" type="button" id="rep-gmn">↻ Repetir</button></div>
+          <div class="modulo-corpo">
+            <div class="busca"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10" cy="10" r="6.5" fill="none" stroke="#111" stroke-width="2.4"/><path d="M15 15l6 6" stroke="#111" stroke-width="2.4"/></svg><span class="q">contador em santa cruz do sul</span></div>
+            <div class="ficha">
+              <div class="ficha-info">
+                <span class="ficha-nome">Seu Negócio Contabilidade</span>
+                <span class="nota"><b class="nota-num">4,9</b><span class="estrelas" aria-label="4,9 de 5 estrelas">★★★★★<span class="cheias" aria-hidden="true">★★★★★</span></span><span>(<span class="aval-num">87</span>)</span></span>
+                <span class="ficha-cat">Escritório de contabilidade · <em>Aberto</em> · fecha às 18:00</span>
+                <span class="ficha-botoes"><span>Site</span><span>Rotas</span><span>Ligar</span></span>
+              </div>
+              <div class="mapa"><span class="pino"></span></div>
+            </div>
+          </div>
+          <p class="exemplo">Exemplo ilustrativo</p>
+        </div>
+      </article>
+
+      <article class="servico">
+        <div class="servico-texto">
+          <h3>Sistemas sob medida</h3>
+          <p>Quando planilha, papel e mensagem solta já não dão conta, um sistema organiza a rotina do jeito que o seu negócio funciona.</p>
+          <ul class="itens"><li>Cadastros, agendas, controles e relatórios</li><li>Feito a partir do seu processo</li><li>Acesso pelo computador e pelo celular</li><li>Acompanhamento depois da entrega</li></ul>
+        </div>
+        <div class="modulo" data-demo="sis">
+          <div class="modulo-barra"><span class="mono">demo · sistema</span><button class="repetir" type="button" id="rep-sis">↻ Repetir</button></div>
+          <div class="modulo-corpo painel">
+            <div class="painel-topo"><span>Painel</span><span class="mono">hoje · 09:42</span></div>
+            <div class="kpis">
+              <div><small>Agendamentos</small><b data-alvo="24" data-de="0">24</b></div>
+              <div><small>Clientes ativos</small><b data-alvo="312" data-de="280">312</b></div>
+              <div><small>Pendências</small><b data-alvo="0" data-de="7">0</b></div>
+            </div>
+            <div class="grafico"><i style="height:45%"></i><i style="height:62%"></i><i style="height:38%"></i><i style="height:74%"></i><i style="height:58%"></i><i style="height:30%"></i><i class="hoje" style="height:88%"></i></div>
+            <div class="dias mono"><span>S</span><span>T</span><span>Q</span><span>Q</span><span>S</span><span>S</span><span>D</span></div>
+            <ul class="lista"><li class="novo">Cliente #1043 cadastrado <span>agora</span></li><li>Orçamento #388 aprovado <span>08:15</span></li><li>Agendamento confirmado <span>07:50</span></li></ul>
+          </div>
+          <p class="exemplo">Exemplo ilustrativo</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="processo escuro" id="processo" aria-labelledby="t-processo">
+    <div class="faixa-int">
+      <header class="cab-secao"><div>
+        <h2 class="titulo-2" id="t-processo">Do primeiro contato à entrega, com você.</h2>
+        <p>Cada projeto segue as mesmas quatro etapas. Você sabe o que está acontecendo em cada uma.</p>
+      </div></header>
+      <div class="etapas" role="list">
+        <span class="trilha" aria-hidden="true"></span><span class="preenche" aria-hidden="true"></span>
+        <div class="etapa" role="listitem"><span class="num">01</span><h3>Conversa</h3><p>Você me conta como o negócio funciona e o que precisa resolver. Pelo WhatsApp, por videochamada ou pessoalmente em Santa Cruz do Sul.</p></div>
+        <div class="etapa" role="listitem"><span class="num">02</span><h3>Proposta</h3><p>Você recebe por escrito o que vai ser feito, o prazo e o investimento, antes de qualquer compromisso.</p></div>
+        <div class="etapa" role="listitem"><span class="num">03</span><h3>Desenvolvimento</h3><p>Construo e mostro o andamento. Você revisa e pede ajustes antes de qualquer coisa ir ao ar.</p></div>
+        <div class="etapa" role="listitem"><span class="num">04</span><h3>Entrega e acompanhamento</h3><p>Publico, explico como usar e continuo por perto para os ajustes que aparecerem.</p></div>
+      </div>
+      <div class="direto">
+        <p>Sem intermediário: <em>quem atende é quem desenvolve.</em></p>
+        <a class="botao botao-amarelo" data-magnetico href="#contato">Começar pela conversa</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="quem" id="quem" aria-labelledby="t-quem">
+    <div class="faixa-int">
+      <div class="foto-vazia" role="img" aria-label="Espaço reservado para a foto do Evandro"><span class="mono">Sua foto aqui</span></div>
+      <div class="quem-texto">
+        <h2 class="quem-rotulo" id="t-quem">Quem faz</h2>
+        <p class="frase">Mais de dez anos cuidando de tecnologia que não pode parar.</p>
+        <p>Sou Evandro Schaefer, profissional de TI em Santa Cruz do Sul. Passei uma década entre infraestrutura e desenvolvimento de sistemas, mantendo no ar o que as empresas não podem perder. Hoje uso essa experiência, junto com inteligência artificial, para criar sites e sistemas com o mesmo cuidado com segurança e estabilidade.</p>
+        <ul class="credenciais">
+          <li><b>10+ anos</b><span>em TI, de infraestrutura a desenvolvimento</span></li>
+          <li><b>Graduação</b><span>em Sistemas para Internet</span></li>
+          <li><b>MBA</b><span>em Cibersegurança</span></li>
+          <li><b>Hoje</b><span>desenvolvimento com inteligência artificial</span></li>
+        </ul>
+        <p>Você fala direto com quem projeta, desenvolve e cuida do seu site depois que ele vai ao ar.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contato" id="contato" aria-labelledby="t-contato">
+    <div class="faixa-int">
+      <div class="contato-texto">
+        <h2 class="titulo" id="t-contato">Vamos conversar sobre o seu projeto?</h2>
+        <p>Me conte o que você precisa. Respondo pessoalmente pelo WhatsApp e, se fizer sentido, marcamos uma conversa.</p>
+        <div class="acoes"><a class="botao botao-cheio" data-magnetico href="https://wa.me/5551991556819?text=Ol%C3%A1%2C%20Evandro!%20Vim%20pelo%20site%20e%20quero%20conversar%20sobre%20um%20projeto." target="_blank" rel="noopener noreferrer"><svg aria-hidden="true"><use href="#ico-whats"/></svg>Conversar pelo WhatsApp</a></div>
+      </div>
+      <div class="dados">
+        <div class="dado"><span class="mono">WhatsApp</span><div class="dado-linha"><strong id="numero">(51) 99155-6819</strong><button class="copiar" type="button" id="copiar-numero">Copiar</button></div><span class="copiado" id="copiado" aria-live="polite"></span></div>
+        <div class="dado"><span class="mono">Base</span><strong>Santa Cruz do Sul/RS</strong></div>
+        <div class="dado"><span class="mono">Atendimento</span><span>Presencial em Santa Cruz do Sul e online para outras cidades</span></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="rodape escuro">
+  <div class="faixa-int">
+    <svg class="logo" viewBox="0 0 1034.8 260" role="img" aria-label="Schaefer Digital"><use href="#logo-sd"/></svg>
+    <p>© 2026 Schaefer Digital · Evandro Schaefer, analista de sistemas</p>
+  </div>
+</footer>
+
+
+    <script>
+      import "../scripts/main.js";
+    </script>
+  </body>
+</html>
