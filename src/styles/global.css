@@ -49,7 +49,7 @@ a { color: inherit; }
 .botao-vazado:hover { background: var(--tinta); color: var(--gelo); }
 .botao-amarelo { background: var(--amarelo); color: var(--tinta); border-color: var(--amarelo); }
 .botao-pequeno { padding: .65rem .95rem; font-size: .8rem; }
-.botao svg { width: 1.1em; height: 1.1em; flex-shrink: 0; }
+.botao svg { width: 1.25em; height: 1.25em; flex-shrink: 0; }
 
 /* Abertura */
 .abertura { position: relative; overflow: hidden; border-left: 14px solid var(--amarelo); }
@@ -207,8 +207,9 @@ a { color: inherit; }
 .quem { padding-block: clamp(4rem, 9vw, 6rem); background: #fff; border-bottom: 2px solid var(--tinta); }
 .quem .faixa-int { display: grid; grid-template-columns: minmax(0, 17rem) minmax(0, 1fr); gap: clamp(2rem, 6vw, 4.5rem); align-items: center; }
 @media (max-width: 52rem) { .quem .faixa-int { grid-template-columns: 1fr; } }
-.foto-vazia { aspect-ratio: 4 / 5; max-width: 17rem; width: 100%; border: 2px dashed var(--tinta); background: var(--gelo); box-shadow: 10px 10px 0 var(--amarelo); display: grid; place-items: center; text-align: center; padding: 1rem; color: var(--cinza); }
-@media (max-width: 52rem) { .foto-vazia { max-width: 12rem; } }
+.foto-quem { display: block; max-width: 17rem; width: 100%; border: 2px solid var(--tinta); background: var(--concreto); box-shadow: 10px 10px 0 var(--amarelo); }
+.foto-quem img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; }
+@media (max-width: 52rem) { .foto-quem { max-width: 12rem; } }
 .quem-texto { display: grid; gap: 1rem; min-width: 0; }
 .quem-texto p { color: var(--cinza); max-width: 58ch; }
 .quem-rotulo { font: 700 1rem/1.3 var(--texto); color: var(--cinza); }
