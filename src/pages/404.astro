@@ -1,0 +1,38 @@
+---
+import "@fontsource-variable/archivo/wdth.css";
+import "@fontsource/jetbrains-mono/400.css";
+import "../styles/global.css";
+---
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Página não encontrada | Schaefer Digital</title>
+    <meta name="robots" content="noindex" />
+    <meta name="theme-color" content="#111111" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  </head>
+  <body>
+    <main class="nao-encontrada">
+      <p class="mono">Erro 404</p>
+      <h1 class="titulo">Esta página não existe.</h1>
+      <p>O endereço pode ter mudado ou estar digitado errado.</p>
+      <a class="botao botao-cheio" href="/">Voltar ao início</a>
+    </main>
+  </body>
+</html>
+
+<style>
+  .nao-encontrada {
+    min-height: 100svh;
+    max-width: 40rem;
+    margin: 0 auto;
+    padding: 4rem max(16px, env(safe-area-inset-left, 0px));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.25rem;
+  }
+</style>

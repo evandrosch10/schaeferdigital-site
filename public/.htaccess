@@ -1,5 +1,7 @@
 # Configuração para a Hostinger (Apache/LiteSpeed). Vai junto no build, na raiz de dist/.
 
+ErrorDocument 404 /404.html
+
 RewriteEngine On
 
 # Um endereço só: sem www (evita site duplicado no Google)
@@ -21,7 +23,7 @@ RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
   Header always unset X-Powered-By
 
   # Arquivos do build com hash no nome podem ficar em cache por 1 ano
-  <FilesMatch "^.+\.[A-Za-z0-9_-]{8}\.(js|css)$">
+  <FilesMatch "^.+\.[A-Za-z0-9_-]{8}\.(js|css|woff2)$">
     Header set Cache-Control "public, max-age=31536000, immutable"
   </FilesMatch>
 </IfModule>

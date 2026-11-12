@@ -8,8 +8,8 @@
   --grafite: #1c1c1a;
   --linha-escura: #33332f;
   --claro-suave: #b5b4ac;
-  --display: "Archivo", "Arial Black", system-ui, sans-serif;
-  --texto: "Archivo", "Segoe UI", system-ui, sans-serif;
+  --display: "Archivo Variable", "Arial Black", system-ui, sans-serif;
+  --texto: "Archivo Variable", "Segoe UI", system-ui, sans-serif;
   --mono: "JetBrains Mono", ui-monospace, Consolas, monospace;
   --gutter-l: max(16px, env(safe-area-inset-left, 0px));
   --gutter-r: max(16px, env(safe-area-inset-right, 0px));

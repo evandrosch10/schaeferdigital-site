@@ -1,7 +1,54 @@
 ---
+import "@fontsource-variable/archivo/wdth.css";
+import "@fontsource/jetbrains-mono/400.css";
+import "@fontsource/jetbrains-mono/500.css";
 import "../styles/global.css";
-const titulo = "Schaefer Digital | Sites, Google Meu Negócio e sistemas sob medida";
+
+// Title até 60 caracteres, com o que eu faço e a cidade primeiro
+const titulo = "Sites e Sistemas em Santa Cruz do Sul | Schaefer Digital";
 const descricao = "Sites, perfil no Google e sistemas sob medida para pequenas e médias empresas. Atendimento direto com Evandro Schaefer, em Santa Cruz do Sul/RS.";
+const url = "https://schaeferdigital.com.br";
+const canonical = new URL(Astro.url.pathname, url).href;
+const imagem = `${url}/og.jpg`;
+
+// Dados estruturados: o negócio (onde atende, o que faz) e o Evandro, ligados por @id
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ProfessionalService",
+      "@id": `${url}/#negocio`,
+      name: "Schaefer Digital",
+      description: descricao,
+      url,
+      image: imagem,
+      logo: `${url}/apple-touch-icon.png`,
+      telephone: "+5551991556819",
+      priceRange: "Sob consulta",
+      address: { "@type": "PostalAddress", addressLocality: "Santa Cruz do Sul", addressRegion: "RS", addressCountry: "BR" },
+      areaServed: [
+        { "@type": "City", name: "Santa Cruz do Sul" },
+        { "@type": "AdministrativeArea", name: "Vale do Rio Pardo" },
+        { "@type": "Country", name: "Brasil" },
+      ],
+      makesOffer: ["Criação de sites", "Otimização do Perfil da Empresa no Google", "Sistemas sob medida"].map((name) => ({
+        "@type": "Offer",
+        itemOffered: { "@type": "Service", name },
+      })),
+      founder: { "@id": `${url}/#evandro` },
+    },
+    {
+      "@type": "Person",
+      "@id": `${url}/#evandro`,
+      name: "Evandro Schaefer",
+      jobTitle: "Analista de IA",
+      image: `${url}/evandro-544.jpg`,
+      worksFor: { "@id": `${url}/#negocio` },
+      knowsAbout: ["Desenvolvimento de sites", "Sistemas web", "Inteligência artificial", "Cibersegurança", "Infraestrutura de TI"],
+    },
+  ],
+};
+const jsonLd = JSON.stringify(schema).replace(/</g, "\\u003c");
 ---
 <!doctype html>
 <html lang="pt-BR">
@@ -17,9 +64,14 @@ const descricao = "Sites, perfil no Google e sistemas sob medida para pequenas e
     <meta property="og:locale" content="pt_BR" />
     <meta property="og:title" content={titulo} />
     <meta property="og:description" content={descricao} />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..800&family=JetBrains+Mono:wght@400;500&display=swap" />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:site_name" content="Schaefer Digital" />
+    <meta property="og:image" content={imagem} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="canonical" href={canonical} />
+    <script type="application/ld+json" set:html={jsonLd} />
   </head>
   <body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -48,7 +100,7 @@ const descricao = "Sites, perfil no Google e sistemas sob medida para pequenas e
     <canvas id="grade" aria-hidden="true"></canvas>
     <div class="faixa-int">
       <div class="abertura-texto">
-        <p class="coord mono"><span>Sites, Google Meu Negócio e sistemas</span></p>
+        <p class="coord mono"><span>Sites, Google Meu Negócio e sistemas · Santa Cruz do Sul/RS</span></p>
         <h1 class="titulo" data-decodificar>Sites e sistemas que trabalham pelo seu negócio.</h1>
         <p class="sub">Crio sites, deixo o seu perfil no Google completo e desenvolvo sistemas sob medida para pequenas e médias empresas. Você fala direto comigo, do primeiro contato à entrega.</p>
         <div class="acoes">
@@ -84,7 +136,7 @@ const descricao = "Sites, perfil no Google e sistemas sob medida para pequenas e
               <span class="seg">Advocacia · Santa Cruz do Sul/RS</span>
               <div class="cartao">
                 <img src="trabalhos/rafaela-capa.jpg" width="560" height="350" alt="Página inicial do site rafaelaschaefer.com.br" loading="lazy" decoding="async">
-                <div class="cartao-corpo"><span class="mono">rafaelaschaefer.com.br</span><a class="botao botao-cheio botao-pequeno" href="https://rafaelaschaefer.com.br/" target="_blank" rel="noopener noreferrer">Abrir o site ↗</a></div>
+                <div class="cartao-corpo"><span class="mono">rafaelaschaefer.com.br</span><!-- Botão "Abrir o site" volta quando o site novo da Rafaela for ao ar (hoje o domínio ainda mostra o WordPress antigo) --></div>
               </div>
             </div>
             <div class="cliente" tabindex="0">
