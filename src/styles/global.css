@@ -270,3 +270,70 @@ a { color: inherit; }
   .etapas .preenche { transform: none; }
   .etapa .num { background: var(--amarelo); color: var(--tinta); border-color: var(--amarelo); }
 }
+
+/* ===== Versão escura (no ar desde 12/11/2026) =====
+   Fundo preto no lugar do branco gelo; só cores, o layout é o mesmo.
+   Para voltar à versão clara: apagar este bloco e a troca de cor da grade em src/scripts/main.js (procurar "Versão escura"). */
+:root { color-scheme: dark; }
+body { background: var(--tinta); color: var(--gelo); }
+body::before { background: var(--tinta); }
+:focus-visible { outline-color: var(--amarelo); }
+.topo { background: color-mix(in srgb, var(--tinta) 92%, transparent); border-bottom-color: var(--linha-escura); }
+.logo { --l-quadro: var(--gelo); --l-s: var(--tinta); --l-texto: var(--gelo); }
+
+/* Botões: o cheio vira amarelo, o vazado ganha borda clara */
+.botao { border-color: var(--gelo); }
+.botao-cheio { background: var(--amarelo); color: var(--tinta); border-color: var(--amarelo); }
+.botao-cheio:hover { background: #ffd84a; }
+.botao-vazado { color: var(--gelo); }
+.botao-vazado:hover { background: var(--gelo); color: var(--tinta); }
+
+/* Textos secundários: cinza claro no lugar do cinza escuro */
+.coord, .abertura .sub, .status, .vit-legenda, .cab-secao p, .servico-texto .mono, .servico-texto > p,
+.fita-dica, .cliente .seg, .quem-texto p, .quem-rotulo, .credenciais span, .contato-texto p, .dado .mono, .copiado { color: var(--claro-suave); }
+.coord span:first-child { background: var(--amarelo); color: var(--tinta); }
+.status::before { outline-color: var(--gelo); }
+.itens li::before { color: var(--tinta); }
+.ch.ruido::before { -webkit-text-stroke: 0; }
+
+/* Vitrine da abertura */
+.janela { border-color: var(--linha-escura); background: var(--grafite); }
+.janela-barra { background: #000; }
+.vit-tela { background: var(--grafite); }
+.vit-legenda b { color: var(--gelo); }
+.vit-pontos i { background: var(--linha-escura); }
+.vit-pontos i.ativo { background: var(--amarelo); }
+
+/* Os módulos de demonstração continuam claros, como telas acesas */
+.modulo { color: var(--tinta); border-color: var(--linha-escura); }
+.modulo-barra { background: #000; }
+
+/* Trabalhos */
+.trabalhos { background: var(--grafite); border-top-color: var(--linha-escura); }
+.fita { border-color: var(--linha-escura); background: rgba(246, 246, 243, 0.03); }
+.cliente { border-right-color: var(--linha-escura); }
+.cliente .nome { -webkit-text-stroke-color: var(--gelo); }
+.cliente:hover .nome, .cliente:focus-within .nome, .cliente.aberto .nome { color: var(--gelo); }
+.cliente .seg::before { background: var(--linha-escura); }
+.cartao { color: var(--tinta); }
+
+/* Quem faz */
+.quem { background: var(--grafite); border-bottom-color: var(--linha-escura); }
+.foto-quem { border-color: var(--linha-escura); }
+.quem-texto .frase { color: var(--gelo); }
+.credenciais { border-color: var(--linha-escura); }
+.credenciais li { background: var(--tinta); border-color: var(--linha-escura); }
+
+/* Seções que já eram escuras ficam em preto puro, para manter a alternância */
+.escuro { background: #000; color: var(--gelo); }
+.etapa .num { background: #000; }
+
+/* Contato */
+.dados { background: var(--grafite); border-color: var(--linha-escura); }
+.dado { border-bottom-color: var(--linha-escura); }
+.copiar { background: transparent; color: var(--gelo); border-color: var(--gelo); }
+.copiar:hover { color: var(--tinta); }
+
+@media (prefers-reduced-motion: reduce) {
+  .etapa .num { background: var(--amarelo); }
+}

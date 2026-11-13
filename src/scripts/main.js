@@ -64,7 +64,7 @@ window.ScrollTrigger = ScrollTrigger;
         ctx.fillRect((i % cols) * CEL + 1, Math.floor(i / cols) * CEL + 1, CEL - 1, CEL - 1);
       }
     }
-    ctx.strokeStyle = "rgba(17, 17, 17, 0.07)"; ctx.lineWidth = 1;
+    ctx.strokeStyle = "rgba(246, 246, 243, 0.07)"; ctx.lineWidth = 1; // Versão escura: na clara era rgba(17, 17, 17, 0.07)
     ctx.beginPath();
     for (let x = 0; x <= larg; x += CEL) { ctx.moveTo(x + 0.5, 0); ctx.lineTo(x + 0.5, alt); }
     for (let y = 0; y <= alt; y += CEL) { ctx.moveTo(0, y + 0.5); ctx.lineTo(larg, y + 0.5); }
